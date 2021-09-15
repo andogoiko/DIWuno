@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+body header {
+  background-color: gray;
+  margin: 1rem;
+  height: calc(25% - 2 * 1rem);
+  width: calc(100% - 2 * 1rem);
+}
+body section {
+  background-color: goldenrod;
+  margin: 0 1rem;
+  height: 60%;
+  width: calc(80% - 2 * 1rem);
+}
+body aside {
+  background-color: hotpink;
+  height: 60%;
+  width: calc(20% - 1rem);
+}
+body footer {
+  background-color: coral;
+  margin: 1rem;
+  height: calc(15% - 2 * 1rem);
+  width: calc(100% - 2 * 1rem);
+}
+/*# sourceMappingURL=index.b3afa39f.css.map */

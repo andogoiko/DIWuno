@@ -1,0 +1,22 @@
+@import "mixings/main"
+
+$spacing: 2rem
+
+header, section, aside, footer
+  border-radius: $spacing / 2
+
+section
+  @include background(#ff82cc, #c5008e)
+  margin: 0  1rem //quita solo de los lados
+  height: 55%
+  width: calc(80% - #{$spacing})
+aside
+  background-color: hotpink
+  height: 55%
+  // header y footer ya le dan de la vertical el margen
+  width: calc(20% - 1rem) //al ser aside no se hace el x2 solo ajustas 1 lado
+footer
+  @include background(#ff82cc, #c5008e)
+  margin: 1rem
+  height: calc(15% - #{$spacing})
+  width: calc(100% - #{$spacing})

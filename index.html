@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>TITLE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css" integrity="sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/main.sass">
     <link rel="stylesheet" href="styles/formulario.scss">
 </head>
@@ -11,37 +12,16 @@
         <block name="header"><include src="./partial/header.html"></include></block>
     </header>
 
-    <nav class="menu" role='navigation'>
-        <ol>
-            <li class="menu-item"><a href="#0">Inicio</a></li>
-            <li class="menu-item"><a href="#0">Contáctanos</a></li>
-            <li class="menu-item" aria-haspopup="true">
-                <a href="#0">Servicios</a>
-                <ol class="sub-menu" aria-label="submenu">
-                    <li class="menu-item"><a href="#0">Montaje</a></li>
-                    <li class="menu-item"><a href="#0">Mantenimiento</a></li>
-                </ol>
-            </li>
-            <li class="menu-item" aria-haspopup="true">
-                <a href="#0">Productos</a>
-                <ol class="sub-menu" aria-label="submenu">
-                    <li class="menu-item"><a href="#0">Máquinas</a></li>
-                    <li class="menu-item"><a href="#0">Herramientas</a></li>
-                    <li class="menu-item"><a href="#0">Materiales</a></li>
-                </ol>
-            </li>
-            <li class="menu-item"><a href="#0">Contáctanos</a></li>
-        </ol>
-    </nav>
 
-    <section>
+    <main>
         <block name="content"><include src="./partial/content.html"></include></block>
-    </section>
+    </main>
     <aside>
         <block name="sidebar"><include src="./partial/sidebar.html"></include></block>
     </aside>
     <footer>
         <block name="footer"><include src="./partial/footer.html"></include></block>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js" integrity="sha512-trzlduO3EdG7Q0xK4+A+rPbcolVt37ftugUSOvrHhLR5Yw5rsfWXcpB3CPuEBcRBCHpc+j18xtQ6YrtVPKCdsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

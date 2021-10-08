@@ -1,4 +1,7 @@
 <extends src="index.html">
+    <block name="styles" type="append">
+        <link rel="stylesheet" href="styles/formulario.scss"> <!-- pa que solo se use aqui este estilo -->
+    </block>
     <block name="content">
         <div class="container">
             <form novalidate>
@@ -77,5 +80,8 @@
                 </div>
             </form>
         </div>
+    </block>
+    <block name="scripts" type="append"> <!-- prepend para que se lea antes-->
+
     </block>
 </extends>

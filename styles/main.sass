@@ -2,11 +2,12 @@ body
   background-color: black
   display: flex
   font:
-    family: Serif
+    family: 'Inter UI', sans-serif
     style: normal
     size: medium
   flex-wrap: wrap
   margin: 0
+  overflow-y: hidden
   padding: 0
   height: 100vh
   width: 100vw
@@ -19,6 +20,7 @@ body
     margin: 1rem
     height: calc(20% - 2 * 1rem)
     width: calc(100% - 2 * 1rem)
+    z-index: 1
     @import "menu"
 
   @import "content"

@@ -7,8 +7,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "parcel build *.html",
-    "start": "parcel serve *.html --open"
+    "build": "parcel build templates/*.html",
+    "start": "parcel serve templates/*.html --open"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "2.0.0-rc.0",

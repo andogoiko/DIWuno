@@ -1,0 +1,21 @@
+{
+  "name": "radio_patio",
+  "version": "0.0.1",
+  "description": "ejercicio_radio",
+  "main": "index.js",
+  "repository": "https://github.com/andogoiko/radio_patio.git",
+  "author": "andogoiko <andoitz.goico@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "parcel build *.html",
+    "start": "parcel serve *.html --open"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.0.0",
+    "autoprefixer": "^10.3.7",
+    "parcel": "^2.0.0",
+    "posthtml-extend": "^0.6.0",
+    "posthtml-include": "^1.7.2"
+  }
+}

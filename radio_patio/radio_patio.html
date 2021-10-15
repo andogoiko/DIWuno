@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>radio patio</title>
+    <link rel="stylesheet" href="estilos/estilos.sass">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <header>
+    <div id="logo"><img src="images/micro.jpg"></div>
+    <div id="titulo"><h1>Radio patio</h1></div>
+      <div id="botonera">
+        <a onclick="play()"><span class="material-icons">play_circle</span></a>
+        <a onclick="anterior()"><span class="material-icons">arrow_circle_left</span></a>
+        <a onclick="pause()"><span class="material-icons">pause_circle_filled</span></a>
+        <a onclick="siguiente()"><span class="material-icons">arrow_circle_right</span></a>
+        <a onclick="volUp()"><span class="material-icons">volume_up</span></a>
+        <a onclick="volDown()"><span class="material-icons">volume_down</span></a>
+      </div>
+  </header>
+    <section>
+        <article>
+            <img id="banner" src="images/micro.jpg">
+        </article>
+        <aside>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">¿Dónde estamos?</a></li>
+                <li><a href="">Nuestra carta</a></li>
+                <li><a href="">Horarios</a></li>
+            </ul>
+        </aside>
+    </section>
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+</body>
+<script>
+
+    var i = 0;
+
+    var canciones = [
+        "audios/AC-DC.mp3",
+        "audios/Aretha.mp3",
+        "audios/Bob Marley.mp3",
+        "audios/Red Hot Chili Peppers.mp3"
+    ]
+
+    var repro;
+
+    function play(){
+        if (!repro){
+            repro = new Audio(canciones[i]);
+        }
+
+        repro.play();
+    }
+
+    function anterior(){
+        repro.pause();
+
+        if(i <= 0){
+            i = canciones.length - 1;
+        }else{
+            i--;
+        }
+
+        repro = new Audio(canciones[i]);
+        repro.play();
+    }
+
+    function pause(){
+        repro.pause();
+    }
+
+    function siguiente(){
+        repro.pause();
+
+        if(i >= canciones.length){
+            i = 0;
+        }else{
+            i++;
+        }
+
+        repro = new Audio(canciones[i]);
+        repro.play();
+    }
+
+    function volUp(){
+
+    }
+
+    function volDown(){
+
+    }
+
+</script>
+</html>

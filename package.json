@@ -1,0 +1,9 @@
+{
+  "name": "radio_patio",
+  "version": "0.0.1",
+  "description": "ejercicio_radio",
+  "main": "index.js",
+  "repository": "https://github.com/andogoiko/radio_patio.git",
+  "author": "andogoiko <andoitz.goico@gmail.com>",
+  "license": "MIT"
+}
